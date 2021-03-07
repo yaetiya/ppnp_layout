@@ -27,8 +27,8 @@ const Gallery = () => {
   return (
     <GroupSection headline="Галерея">
       <Grid container spacing={4}>
-        {items.map((item) => (
-          <Grid item lg={4} md={12}>
+        {items.map((item, index) => (
+          <Grid item lg={4} xs={12} md={6} key={index}>
             <Box marginTop={3}>
               <GalleryCard {...item} />
             </Box>

@@ -9,10 +9,10 @@ const Footer = () => {
     <>
       <Box marginTop={4}>
         <Grid container spacing={5}>
-          <Grid item lg={6}>
+          <Grid item lg={6} md={12}>
             <FooterForm />
           </Grid>
-          <Grid item lg={6}>
+          <Grid item lg={6} md={12}>
             <FooterContacts />
           </Grid>
         </Grid>

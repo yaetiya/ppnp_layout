@@ -35,8 +35,8 @@ const PriceList = () => {
   return (
     <GroupSection headline="Прайс-лист">
       <Grid container spacing={5}>
-        {items.map((item) => (
-          <Grid item lg={3}>
+        {items.map((item, index) => (
+          <Grid item lg={3} md={6} xs={12} key={index}>
             <Box marginTop={3}>
               <PriceCard {...item} />
             </Box>
