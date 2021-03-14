@@ -1,6 +1,11 @@
 import { createMuiTheme } from "@material-ui/core";
 
 export const theme = createMuiTheme({
+  props: {
+    MuiButton: {
+      disableRipple: true,
+    },
+  },
   typography: {
     fontFamily: '"Montserrat"',
   },
@@ -10,6 +15,7 @@ export const theme = createMuiTheme({
       main: "#3469F6",
       contrastText: "#FFF",
       light: "#EAEEF3",
+      dark: "#5862EE",
     },
     secondary: {
       main: "#626870",
@@ -26,7 +32,7 @@ export const theme = createMuiTheme({
       body1: {
         fontWeight: "bold",
         fontSize: 24,
-        color: "#626870"
+        color: "#626870",
       },
     },
     MuiPaper: {
